@@ -1,0 +1,18 @@
+[0607/114433.356:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\temp\settings.dat: Access is denied. (0x5)
+[0607/114433.437:ERROR:registration_protocol_win.cc(83)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0607/114433.437:ERROR:crashpad_win.cc(223)] Crashpad handler failed to start, crash reporting disabled
+[0607/121111.602:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\temp\settings.dat: Access is denied. (0x5)
+[0607/121111.642:ERROR:registration_protocol_win.cc(60)] WaitNamedPipe: The system cannot find the file specified. (0x2)
+[0607/121111.653:ERROR:crashpad_win.cc(223)] Crashpad handler failed to start, crash reporting disabled
+[0607/121120.489:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\temp\settings.dat: Access is denied. (0x5)
+[0607/121123.811:ERROR:registration_protocol_win.cc(60)] WaitNamedPipe: The system cannot find the file specified. (0x2)
+[0607/121123.817:ERROR:crashpad_win.cc(223)] Crashpad handler failed to start, crash reporting disabled
+[0607/121158.671:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\temp\settings.dat: Access is denied. (0x5)
+[0607/121158.719:ERROR:registration_protocol_win.cc(60)] WaitNamedPipe: The system cannot find the file specified. (0x2)
+[0607/121158.735:ERROR:crashpad_win.cc(223)] Crashpad handler failed to start, crash reporting disabled
+[0607/121216.955:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\temp\settings.dat: Access is denied. (0x5)
+[0607/121216.994:ERROR:registration_protocol_win.cc(60)] WaitNamedPipe: The system cannot find the file specified. (0x2)
+[0607/121217.011:ERROR:crashpad_win.cc(223)] Crashpad handler failed to start, crash reporting disabled
+[0607/121242.518:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\temp\settings.dat: Access is denied. (0x5)
+[0607/121242.542:ERROR:registration_protocol_win.cc(83)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0607/121242.579:ERROR:crashpad_win.cc(223)] Crashpad handler failed to start, crash reporting disabled
