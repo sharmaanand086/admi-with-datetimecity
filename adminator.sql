@@ -64,10 +64,10 @@ CREATE TABLE `user_mgt` (
 --
 
 INSERT INTO `user_mgt` (`id`, `name`, `mobile`, `email`, `user_name`, `password`, `cpassword`) VALUES
-(2, 'anand shrma', '2147483647', 'anandsharma@gmail.com', 'anand', '123456', '123456'),
-(3, 'anand shrma', '8882298643', 'anandsharma1@gmail.com', 'anand1', '123456', '123456'),
-(4, 'anand shrma', '8882298643', 'anandsharma12@gmail.com', 'anand12', '123456', '123456'),
-(5, 'anand shrma', '8882298643', 'anandsharma123@gmail.com', 'anand123', '123456', '123456'),
+(2, 'anand shrma', '2147483647', '2323@gmail.com', 'anand', '123456', '123456'),
+(3, 'anand shrma', '2323232', '23232@gmail.com', 'anand1', '123456', '123456'),
+(4, 'anand shrma', '232323', '23232@gmail.com', 'anand12', '123456', '123456'),
+(5, 'anand shrma', '23232323', '232323@gmail.com', 'anand123', '123456', '123456'),
 (6, 'anoop', '986889755', 'anoop@gmail.com', 'anoop', '123456', '123456');
 
 --
