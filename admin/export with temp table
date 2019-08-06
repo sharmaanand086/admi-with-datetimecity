@@ -1,0 +1,42 @@
+<?php 
+// $dbHost     = "localhost";
+// $dbUsername = "root";
+// $dbPassword = "24234";
+// $dbName     = "dbctf";
+// Create database connection
+$db = new mysqli("localhost", "root", "234234234", "dbctf");
+//$db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName); 
+// var_dump($db)       ;
+$filename = "members_" . date('Y-m-d') . ".csv"; 
+$delimiter = ","; 
+ 
+// Create a file pointer 
+$f = fopen('php://memory', 'w'); 
+ 
+// Set column headers 
+$fields = array(`userid`, `name`, `email_id`, `mob_no`,`week`, `status`, `start_date`, `end_date`); 
+fputcsv($f, $fields, $delimiter); 
+ 
+// Get records from the database 
+$result = $db->query("'create table tmp_export SELECT cc.userid, cc.name, cc.email_id, cc.mob_no, cw.week, cw.status, cw.start_date, cw.end_date FROM cc_coach_weeks cw LEFT JOIN cc_coach cc ON cc.userid = cw.userid WHERE cw.week = 1 AND (cw.status = 0 OR cw.status = 1)'");
+ 
+ if($result->num_rows > 0){ 
+    // Output each row of the data, format line as csv and write to file pointer 
+    while($row = $result->fetch_assoc()){     	 
+        $lineData = array($row['userid'], $row['name'], $row['email_id'], $row['mob_no'], $row['week'], $row['status'], $row['start_date'], $row['end_date'] ); 
+        fputcsv($f, $lineData, $delimiter); 
+    } 
+} 
+ 
+// Move back to beginning of file 
+fseek($f, 0); 
+ 
+// Set headers to download file rather than displayed 
+header('Content-Type: text/csv'); 
+header('Content-Disposition: attachment; filename="' . $filename . '";'); 
+ 
+// Output all remaining data on a file pointer 
+fpassthru($f); 
+ 
+// Exit from file 
+exit();
